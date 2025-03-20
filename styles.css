@@ -12,22 +12,39 @@ header {
     padding: 20px 0;
 }
 
+.contenedor {
+    display: flex;  
+    gap: 20px;  
+    align-items: stretch; /* Hace que ambas secciones tengan la misma altura */
+}
+
 #perfil {
+    flex: 2;  
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
 }
 
 #perfil img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .info {
-    max-width: 600px;
+    flex: 1; 
+}
+
+#zodiaco {
+    flex: 1;  
+    background-color: #f8f8f8;  
+    padding: 15px;
+    border-radius: 8px;  
+    display: flex;  
+    flex-direction: column; /* Para que el contenido no se deforme */
+    justify-content: center; /* Centra el contenido verticalmente */
+    height: 100%; /* Hace que la sección crezca con la del perfil */
 }
 
 section {
@@ -36,4 +53,29 @@ section {
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.info-bloque {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+.info-bloque img {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: square; /* Cambia las viñetas a cuadrados */
 }
