@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 header {
     text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+    background-color: #f8f8f8;
+    color: #b670e9;
+    padding: 5px 0;
 }
 
 .contenedor {
@@ -18,17 +18,24 @@ header {
     align-items: stretch; /* Hace que ambas secciones tengan la misma altura */
 }
 
+footer {
+    text-align: center;  /* Centra el texto y los enlaces */
+    padding: 15px;
+    background-color: #f8f8f8;  
+}
+
+
 #perfil {
     flex: 2;  
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 #perfil img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 30%;
     object-fit: cover;
 }
 
@@ -38,7 +45,7 @@ header {
 
 #zodiaco {
     flex: 1;  
-    background-color: #f8f8f8;  
+    background-color: #b670e9;  
     padding: 15px;
     border-radius: 8px;  
     display: flex;  
@@ -50,12 +57,12 @@ header {
 section {
     margin-top: 20px;
     padding: 15px;
-    background: white;
+    background: rgb(240, 210, 245);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Elementos de la Información académica y Laboral */
 
 .info-bloque {
     display: flex;
@@ -81,8 +88,7 @@ ul {
 }
 
 
-
-
+/* Elementos de la sección de Catniss */
 
 .fotos {
     display: flex;  
